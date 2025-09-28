@@ -92,6 +92,17 @@ body {
   background: var(--apple-gray-2);
   color: var(--apple-white);
   border: 1px solid var(--apple-gray-3);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
 }
 
 .apple-button-secondary:hover {
