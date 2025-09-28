@@ -23,7 +23,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
 
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-          <span className="bg-gradient-to-br from-white via-sky-200 to-indigo-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-br from-white via-sky-400 to-indigo-400 bg-clip-text text-transparent">
             Beautiful Icons <br /> Made with AI
           </span>
          {/*  <br />
