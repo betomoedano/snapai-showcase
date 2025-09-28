@@ -69,8 +69,8 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
               onClick={onAuthClick}
               className="apple-button text-lg px-12 py-5 interactive group"
             >
-              <ArrowRight className="w-5 h-5 mr-2" />
               Join the Community
+               <ArrowRight className="w-5 h-5 mr-2" />
             </button>
           )}
 
