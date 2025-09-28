@@ -38,8 +38,8 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
 
         {/* Branding */}
         <div className="mb-12">
-          <p className="text-gray-500 text-sm mb-2">Powered by</p>
-          <a
+          <p className="text-gray-500 text-sm mb-2">Poweredcdc by</p>
+          {/* <a
             href="https://codewithbeto.dev"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
             </span>
             <ArrowRight className="w-4 h-4" />
           </a>
-          <p className="text-gray-500 text-sm mt-1">Learn to build amazing apps • Check out our courses and resources</p>
+          <p className="text-gray-500 text-sm mt-1">Learn to build amazing apps • Check out our courses and resources</p> */}
         </div>
 
         {/* Call to action buttons */}
