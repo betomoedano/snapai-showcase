@@ -24,14 +24,14 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           <span className="bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
-            Beautiful Icons
+            Beautiful Icons Made with AI
           </span>
           <br />
           <span className="text-white">Made with AI</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-xl/7 text-gray-400 mb-8 max-w-3xl mx-auto font-light tracking-tigher">
+        <p className="text-xl md:text-2xl/7 text-gray-400 mb-8 max-w-3xl mx-auto font-light tracking-tigher">
           Discover stunning icons created with SnapAI. Get inspired by our community's
           masterpieces and share your own AI-generated creations.
         </p>
