@@ -31,7 +31,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto  font-light tracking-tigh">
+        <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto  font-light tracking-tigher">
           Discover stunning icons created with SnapAI. Get inspired by our community's
           masterpieces and share your own AI-generated creations.
         </p>
