@@ -114,7 +114,7 @@ export function ShowcaseHeader({ onSubmitClick, onAuthClick, onAdminClick }: Sho
             ) : (
               <button
                 onClick={onAuthClick}
-                className="apple-button-secondary interactive px-3 py-1 rounded"
+                className="apple-button-secondary interactive px-3 py-1"
               >
                 Sign In to Submit
               </button>
