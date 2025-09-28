@@ -46,7 +46,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
             className="inline-block items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
           >
             <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Bolt
+              Bolt 
             </span>
           </a>
           {/* <a
