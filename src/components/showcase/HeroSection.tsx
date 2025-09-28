@@ -24,10 +24,10 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
           <span className="bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
-            Beautiful Icons Made with AI
+            Beautiful Icons <br /> Made with AI
           </span>
-          <br />
-          <span className="text-white">Made with AI</span>
+         {/*  <br />
+          <span className="text-white">Made with AI</span> */}
         </h1>
 
         {/* Subtitle */}
