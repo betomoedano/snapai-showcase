@@ -1,0 +1,296 @@
+/* Apple-style Dark Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Apple Dark Colors */
+  --apple-black: #000000;
+  --apple-gray-1: #1c1c1e;
+  --apple-gray-2: #2c2c2e;
+  --apple-gray-3: #3a3a3c;
+  --apple-gray-4: #48484a;
+  --apple-gray-5: #636366;
+  --apple-gray-6: #8e8e93;
+  --apple-white: #ffffff;
+  --apple-blue: #007aff;
+  --apple-blue-dark: #0056cc;
+  --apple-green: #30d158;
+  --apple-red: #ff3b30;
+  --apple-orange: #ff9500;
+  --apple-purple: #af52de;
+
+  /* Glass morphism */
+  --glass-bg: rgba(28, 28, 30, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  /* Animations */
+  --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--apple-black);
+  color: var(--apple-white);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glass Card Effect */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--glass-shadow);
+  transition: all 0.3s var(--ease-out);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Apple Button Styles */
+.apple-button {
+  background: var(--apple-blue);
+  color: var(--apple-white);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.apple-button:hover {
+  background: var(--apple-blue-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 122, 255, 0.3);
+}
+
+.apple-button:active {
+  transform: translateY(0);
+}
+
+.apple-button-secondary {
+  background: var(--apple-gray-2);
+  color: var(--apple-white);
+  border: 1px solid var(--apple-gray-3);
+}
+
+.apple-button-secondary:hover {
+  background: var(--apple-gray-3);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.apple-button-danger {
+  background: var(--apple-red);
+}
+
+.apple-button-danger:hover {
+  background: #d70015;
+  box-shadow: 0 4px 20px rgba(255, 59, 48, 0.3);
+}
+
+.apple-button-success {
+  background: var(--apple-green);
+  color: var(--apple-black);
+}
+
+.apple-button-success:hover {
+  background: #28a745;
+  box-shadow: 0 4px 20px rgba(48, 209, 88, 0.3);
+}
+
+/* Copy Animation */
+.copy-icon {
+  transition: all 0.3s var(--spring);
+  transform-origin: center;
+}
+
+.copy-icon.copying {
+  transform: scale(1.2);
+  color: var(--apple-green);
+}
+
+.copy-icon.success {
+  transform: scale(1.1);
+  color: var(--apple-green);
+}
+
+/* Input Styles */
+.apple-input {
+  background: var(--apple-gray-1);
+  border: 1px solid var(--apple-gray-3);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--apple-white);
+  font-size: 16px;
+  transition: all 0.2s var(--ease-out);
+  width: 100%;
+}
+
+.apple-input:focus {
+  outline: none;
+  border-color: var(--apple-blue);
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.15);
+}
+
+.apple-input::placeholder {
+  color: var(--apple-gray-5);
+}
+
+/* Header blur effect */
+.header-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Smooth transitions for all interactive elements */
+.interactive {
+  transition: all 0.2s var(--ease-out);
+}
+
+.interactive:hover {
+  transform: translateY(-1px);
+}
+
+.interactive:active {
+  transform: translateY(0);
+}
+
+/* Loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--apple-gray-4);
+  border-radius: 50%;
+  border-top-color: var(--apple-blue);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn 0.5s var(--ease-out) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography */
+.apple-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--apple-white);
+  margin: 0;
+}
+
+.apple-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--apple-white);
+  margin: 0;
+}
+
+.apple-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--apple-gray-6);
+}
+
+.apple-caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--apple-gray-5);
+}
+
+/* Status indicators */
+.status-pending {
+  color: var(--apple-orange);
+  background: rgba(255, 149, 0, 0.1);
+  border: 1px solid rgba(255, 149, 0, 0.2);
+}
+
+.status-approved {
+  color: var(--apple-green);
+  background: rgba(48, 209, 88, 0.1);
+  border: 1px solid rgba(48, 209, 88, 0.2);
+}
+
+.status-featured {
+  color: var(--apple-purple);
+  background: rgba(175, 82, 222, 0.1);
+  border: 1px solid rgba(175, 82, 222, 0.2);
+}
+
+/* File upload area */
+.upload-zone {
+  border: 2px dashed var(--apple-gray-3);
+  border-radius: 16px;
+  background: var(--apple-gray-1);
+  transition: all 0.3s var(--ease-out);
+}
+
+.upload-zone:hover {
+  border-color: var(--apple-blue);
+  background: rgba(0, 122, 255, 0.05);
+}
+
+.upload-zone.drag-over {
+  border-color: var(--apple-blue);
+  background: rgba(0, 122, 255, 0.1);
+  transform: scale(1.02);
+}
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--apple-gray-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--apple-gray-4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--apple-gray-5);
+}
