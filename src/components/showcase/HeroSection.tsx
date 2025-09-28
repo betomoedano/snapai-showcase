@@ -39,6 +39,16 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
         {/* Branding */}
         <div className="mb-12">
           <p className="text-gray-500 text-sm mb-2">Powered by</p>
+          <a
+            href="https://codewithbeto.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
+          >
+            <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Bolt
+            </span>
+          </a>
           {/* <a
             href="https://codewithbeto.dev"
             target="_blank"
