@@ -38,8 +38,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
 
         {/* Branding */}
         <div className="mb-12">
-          <p className="text-gray-500 text-sm mb-2">Powered by</p>
-          <a
+          <p className="text-gray-500 text-sm mb-2">Powered by  <a
             href="http://bolt.new/"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,7 +47,8 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
             <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Bolt
             </span>
-          </a>
+          </a></p>
+         
           {/* <a
             href="https://codewithbeto.dev"
             target="_blank"
