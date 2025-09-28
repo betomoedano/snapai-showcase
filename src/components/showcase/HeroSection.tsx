@@ -43,7 +43,7 @@ export function HeroSection({ onSubmitClick, onAuthClick }: HeroSectionProps) {
             href="http://bolt.new/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block  items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
+            className="inline-bloc items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-medium"
           >
             <span className="text-lg font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Bolt
